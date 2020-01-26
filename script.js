@@ -1,7 +1,7 @@
 const screen = document.querySelector('#screen');
 const cleanBtn = document.querySelector('#clear');
 const resizeBtn = document.querySelector('#resize');
-const colorBtn = document.querySelector('#colors');
+const colorBtn = document.querySelector('#color');
 
 let squares = 16;
 
@@ -58,7 +58,7 @@ function resize() {
 
 colorBtn.addEventListener('click', () => {
 	if (colorBtn.innerText == 'Black') {
-		colorBtn.innerText ='Colored'
+		colorBtn.innerText = 'Party'
 	} else {
 		colorBtn.innerText = 'Black'
 	}
@@ -72,7 +72,7 @@ function currentColor() {
 	color = 'rgb(' + Math.random() * 256 + ', ' + Math.random() * 256 + ', ' + Math.random() * 256 + ')';
 	
 	} else {
-		color = 'black'
+		color = 'gray'
 	}
 
 	return(color)
